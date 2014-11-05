@@ -10,12 +10,6 @@
   <!-- Include configuration for dependencies listed in setup.py -->
   <includeDependencies package="." />
 
-  <!-- Register a resource directory from which we can deploy static
-   resource files. -->
-  <browser:resourceDirectory
-    name="iomedia.widgets"
-    directory="resources" />
-
   <i18n:registerTranslations directory="locales" />
 
   <!-- Register an extension profile to make the product installable
@@ -28,6 +22,6 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <!-- -*- extra stuff goes here -*- -->
+
 
 </configure>
