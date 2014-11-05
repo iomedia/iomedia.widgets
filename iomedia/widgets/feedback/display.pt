@@ -1,0 +1,9 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      tal:omit-tag="">
+   <div class="iomedia-widgets-feedback-view">
+			<tal:block tal:repeat="star view/stars">
+				<span tal:attributes="class string:iomedia-widgets-feedback-star ${star/on}"></span>
+			</tal:block>
+		</div>
+</html>

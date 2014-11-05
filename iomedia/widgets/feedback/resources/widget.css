@@ -1,0 +1,22 @@
+div.iomedia-widgets-feedback,
+div.iomedia-widgets-feedback-view{
+	display: table;
+}
+
+span.iomedia-widgets-feedback-star{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background: transparent url('++resource++iomedia.widgets.feedback/star_off.png') no-repeat 0 0;
+	float: left;
+	padding: 0 2px 0 2px;
+
+}
+
+div.iomedia-widgets-feedback span.iomedia-widgets-feedback-star{
+	cursor: pointer;
+}
+
+span.iomedia-widgets-feedback-star-on{
+	background-image: url('++resource++iomedia.widgets.feedback/star_on.png');
+}
