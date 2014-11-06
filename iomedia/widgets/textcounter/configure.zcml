@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="iomedia.widgets">
+
+    <browser:resourceDirectory
+       name="iomedia.widgets.textcounter"
+       directory="resources"
+    />
+
+    <class class=".widget.TextcounterWidget">
+        <require
+            permission="zope.Public"
+            interface=".interfaces.ITextcounterWidget"
+        />
+    </class>
+
+    <z3c:widgetTemplate
+        mode="input"
+        widget=".widget.ITextcounterWidget"
+        layer="z3c.form.interfaces.IFormLayer"
+        template="input.pt"
+    />
+
+    <z3c:widgetTemplate
+          mode="display"
+          widget=".widget.ITextcounterWidget"
+          layer="z3c.form.interfaces.IFormLayer"
+          template="display.pt"
+    />
+          
+    <z3c:widgetTemplate
+          mode="hidden"
+          widget=".widget.ITextcounterWidget"
+          layer="z3c.form.interfaces.IFormLayer"
+          template="hidden.pt"
+    />
+
+</configure>

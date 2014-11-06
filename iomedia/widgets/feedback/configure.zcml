@@ -3,7 +3,7 @@
     xmlns:grok="http://namespaces.zope.org/grok"
     xmlns:z3c="http://namespaces.zope.org/z3c"
     xmlns:browser="http://namespaces.zope.org/browser"
-    i18n_domain="buyspoke.ecommerce">
+    i18n_domain="iomedia.widgets">
     
     
     <browser:resourceDirectory

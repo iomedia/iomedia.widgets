@@ -23,5 +23,6 @@
       />
 
     <include package=".feedback" />
+    <include package=".textcounter" />
 
 </configure>

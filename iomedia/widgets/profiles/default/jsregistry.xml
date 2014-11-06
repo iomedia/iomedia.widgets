@@ -4,4 +4,9 @@
         id="++resource++iomedia.widgets.feedback/widget.js"
         cacheable="False" compression="safe" cookable="False"
         enabled="True" expression="" inline="False" />
+        
+    <javascript
+        id="++resource++iomedia.widgets.textcounter/widget.js"
+        cacheable="False" compression="safe" cookable="False"
+        enabled="True" expression="" inline="False" />
 </object>
