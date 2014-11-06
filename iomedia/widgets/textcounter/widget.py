@@ -19,7 +19,7 @@ class TextcounterWidget(widget.HTMLTextAreaWidget, Widget):
     def update(self):
         super(TextcounterWidget, self).update()
         if self.field.max_length:
-            self.maxlength = self.field.max_length#
+            self.maxlength = self.field.max_length
         self.transformer = getToolByName(self.context,'portal_transforms')
         widget.addFieldClass(self)
 
