@@ -1,9 +1,9 @@
-function updateCountdown(field,maxchars) {
+function updateCountdownWidget(field,maxchars) {
     // Calculate remaining characters (including line breaks)
     var remaining = maxchars - $(field)
     .val()
     .replace(/(\r\n|\n|\r)/g,"  ")
-    .length;	
+    .length;
     // Update the counter
     $(field)
     .next('div.iomedia-widgets-textcounter-remaining')
@@ -15,9 +15,9 @@ jQuery(function ($) {
     $('textarea.iomedia-widgets-textcounter').each(function() {
         if ($(this).attr('maxlength').length){
             var maxchars = $(this).attr('maxlength');
-            updateCountdown(this,maxchars);
-            $(this).change(function(){updateCountdown(this,maxchars)});
-            $(this).keyup(function(){updateCountdown(this,maxchars)});
+            updateCountdownWidget(this,maxchars);
+            $(this).change(function(){updateCountdownWidget(this,maxchars)});
+            $(this).keyup(function(){updateCountdownWidget(this,maxchars)});
         }
     });
 });
